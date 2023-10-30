@@ -1,13 +1,24 @@
+import { useContext } from "react";
+import ThemeContext from "../contexts/theme";
+
 export default function Logout({ setCounter }) {
+  const { theme, setTheme } = useContext(ThemeContext);
   return (
-    <footer>
+    <>
       <button
         onClick={() => {
           setCounter(0);
         }}
       >
-        Logout and reset
+        Logout from {theme} theme and reset
       </button>
-    </footer>
+      <button
+        onClick={() => {
+          setTheme(theme === "light" ? "dark" : "light");
+        }}
+      >
+        Switch
+      </button>
+    </>
   );
 }

@@ -1,4 +1,15 @@
 .App {
+  min-height: 100vh;
   font-family: sans-serif;
   text-align: center;
+}
+
+.dark {
+  background-color: #222;
+  color: #fff;
+}
+
+.light {
+  background-color: #fff;
+  color: #222;
 }
