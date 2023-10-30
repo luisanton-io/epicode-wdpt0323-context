@@ -15,7 +15,7 @@ export default function App() {
     <>
       <ThemeContext.Provider value={{ theme, setTheme }}>
         <div className={`${theme} App`}>
-          <NavBar theme={theme} setTheme={setTheme} />
+          <NavBar />
           <Counter counter={counter} setCounter={setCounter} />
           {/* 
         ...immaginate una lunga lista di componenti... 
